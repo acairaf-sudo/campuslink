@@ -1,0 +1,13 @@
+<h1>Add Parent</h1>
+
+{% if submitted %}
+    <p>Parent added successfully!</p>
+    <p><a href="{% url 'index_directory' %}">Back to Student List</a></p>
+{% else %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Parent</button>
+    </form>
+    <p><a href="{% url 'pagina_principal' %}"><button>Volver al Inicio</button></a></p>
+{% endif %}

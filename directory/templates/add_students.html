@@ -1,0 +1,12 @@
+<h1>Add Student</h1>
+
+{% if submitted %}
+    <p>Student added successfully!</p>
+    <p><a href="{% url 'index_directory' %}">Back to Student List</a></p>
+{% else %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}  <button type="submit">Add Student</button>
+    </form>
+    <p><a href="{% url 'pagina_principal' %}"><button>Volver al Inicio</button></a></p>
+{% endif %}

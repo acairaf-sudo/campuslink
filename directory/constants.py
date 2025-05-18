@@ -1,0 +1,17 @@
+DESIRED_GRADE_ORDER = [
+    "Materno",
+    "Prejardin",
+    "Jardin",
+    "Transicion",
+    "Primero",
+    "Segundo",
+    "Tercero",
+    "Cuarto",
+    "Quinto",
+    "Sexto",
+    "Septimo",
+    "Octavo",
+    "Noveno",
+    "Decimo",
+    "Once",
+]
